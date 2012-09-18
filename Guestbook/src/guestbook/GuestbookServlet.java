@@ -13,7 +13,7 @@ public class GuestbookServlet extends HttpServlet {
 
         if (user != null) {
             resp.setContentType("text/html");
-            resp.getWriter().println("Hello, " + user.getNickname() +"<p>");
+            resp.getWriter().println("Hello, " + user.getNickname() +"<p>"); 
             resp.getWriter().println("To logout go to <a href=\"" +
               userService.createLogoutURL(req.getRequestURI()) + "\">this link</a>");
         } else {
