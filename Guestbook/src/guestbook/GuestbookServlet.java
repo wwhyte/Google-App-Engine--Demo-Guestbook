@@ -17,7 +17,7 @@ public class GuestbookServlet extends HttpServlet {
             resp.getWriter().println("To logout go to <a href=\"" +
               userService.createLogoutURL(req.getRequestURI()) + "\">this link</a>");
         } else {
-            resp.sendRedirect(userService.createLoginURL(req.getRequestURI()));
+            resp.sendRedirect(userService.createLoginURL(req.getRequestURI())); 
         }
 	}
 }
